@@ -81,7 +81,7 @@ body{
   line-height: 1.7em;
   font-size: 15px;
   font-weight: lighter;
-  /* overflow: hidden; */
+  
 }
 
 .price {
@@ -113,7 +113,7 @@ body{
 }
 
 .product-btn button {
-    float: right;  
+  float: right;  
   display: inline-block;
   height: 50px;
   width: 250px;
@@ -132,6 +132,48 @@ body{
   outline: none;
 }
 
+
 .product-price-btn button:hover {
   background-color: #79b0a1;
 }
+
+@media screen and (max-width: 600px){
+  .wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 380px;
+      /* height: 200px; */
+  }
+
+  .product-img img {
+    
+    border-radius: 7px 7px 0px 0px;
+    height: 300px;
+    width:380px;
+    object-fit: cover;
+    
+  }
+
+  .product-btn button{
+     /* float:center;  */
+    margin-bottom: 25px;
+    width:80%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  }
+
+  .product-info {
+    float:left;
+    height:470px;
+    width:380px;
+    border-radius: 0 0 7px 7px;
+    background-color: #ffffff;
+  
+  }
+
+  .product-text{
+    /* height:300px; */
+    width:350px;
+  }
